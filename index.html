@@ -9,13 +9,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class=" container mx-auto p-5 md:p-4">
     <header>
-        <h1>Digital Tozbi Counter</h1>
+        <h1
+            class="mb-16 text-3xl text-center  lg:mt-20 md:mt-20 font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl ">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Digital Tasbih
+            </span>
+        </h1>
     </header>
     <main>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+            <!-- Div 1 -->
+            <div class=" bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 text-center rounded-md p-16 ">
+                <h3 class="text-3xl mb-4">Subhan Allah</h3>
+                <p id="subahanAllah-display-count" class="text-5xl mb-8">0</p>
+                <div>
+                    <button id="subahanAllah-Plus-btn"
+                        class="text-lg font-medium text-white bg-pink-400 p-2 px-3 rounded mb-3">Incriment</button>
+                    <button id="subahanAllah-minus-btn"
+                        class="text-lg font-medium text-white bg-indigo-400 p-2 px-3 rounded">Decriment</button>
+                </div>
+            </div>
 
+            <!-- Div 2 -->
+            <div class=" bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 text-center rounded-md p-16 ">
+                <h3 class="text-3xl mb-4">Alhamdulilah</h3>
+                <p id="alhamdulillah-display-count" class="text-5xl mb-8">0</p>
+                <div>
+                    <button id="alhamdulillah-plus-btn"
+                        class="text-lg font-medium text-white bg-pink-400 p-2 px-3 rounded mb-3">Incriment</button>
+                    <button id="alhamdulillah-minus-btn"
+                        class="text-lg font-medium text-white bg-indigo-400 p-2 px-3 rounded">Decriment</button>
+                </div>
+            </div>
+
+            <!-- Div 3 -->
+            <div class=" bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 text-center rounded-md p-16 ">
+                <h3 class="text-3xl mb-4">Allah Huakber</h3>
+                <p id="allahHuakber-display-count" class="text-5xl mb-8">0</p>
+                <div>
+                    <button id="allahHuakber-plus-btn"
+                        class="text-lg font-medium text-white bg-pink-400 p-2 px-3 rounded mb-3">Incriment</button>
+                    <button id="allahHuakber-minus-btn"
+                        class="text-lg font-medium text-white bg-indigo-400 p-2 px-3 rounded">Decriment</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="reset-btn" class=" flex justify-center mt-8 lg:mt-16">
+            <button
+                class="bg-gradient-to-r from-blue-400 to-emerald-400 rounded-md p-4 px-12  text-white text-lg font-medium">Reset
+                All</button>
+        </div>
+
+        <!-- JS Link -->
+        <script src="index.js"></script>
     </main>
 
 </body>
